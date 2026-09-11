@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs><style>
+.title{font:700 34px Arial;fill:#10233f}.h{font:700 25px Arial;fill:#fff}.t{font:19px Arial;fill:#24364d}.s{font:17px Arial;fill:#42556e}.box{rx:18;stroke-width:3}.line{stroke:#5277a3;stroke-width:4;fill:none}.dash{stroke:#d58b22;stroke-width:4;stroke-dasharray:12 8;fill:none}
+</style><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#5277a3"/></marker></defs>
+<rect width="1400" height="900" fill="#f5f8fc"/>
+<text x="700" y="55" text-anchor="middle" class="title">Proxmox &amp; Rocky Linux Cluster – Architektur</text>
+<rect x="60" y="100" width="1280" height="720" class="box" fill="#e8eef7" stroke="#4c6585"/>
+<text x="700" y="140" text-anchor="middle" class="t" font-weight="bold">Proxmox-Host: proxmox1</text>
+<rect x="140" y="190" width="480" height="420" class="box" fill="#fff" stroke="#2463a7"/>
+<rect x="140" y="190" width="480" height="65" rx="18" fill="#2463a7"/>
+<text x="380" y="232" text-anchor="middle" class="h">Headnode · VM 142</text>
+<text x="180" y="295" class="t">Rocky Linux 9.8 · 2 CPU · 4 GiB RAM</text>
+<text x="180" y="335" class="t">ens18: 192.168.50.92/24</text>
+<text x="180" y="375" class="t">ens19: 10.0.100.250/24</text>
+<text x="180" y="425" class="t">ZFS: zfspool auf zusätzlicher sdb</text>
+<text x="180" y="465" class="t">NFS-Server: /zfspool/data/shared</text>
+<text x="180" y="505" class="t">SSH · Firewalld · XRDP</text>
+<text x="180" y="545" class="s" fill="#b06e0d">Ganglia konfiguriert · Start ausstehend</text>
+<rect x="780" y="190" width="480" height="420" class="box" fill="#fff" stroke="#27865e"/>
+<rect x="780" y="190" width="480" height="65" rx="18" fill="#27865e"/>
+<text x="1020" y="232" text-anchor="middle" class="h">Node01 · VM 188</text>
+<text x="820" y="295" class="t">Rocky Linux 9.8 · 2 CPU · 4 GiB RAM</text>
+<text x="820" y="335" class="t">ens18: 192.168.50.93/24</text>
+<text x="820" y="375" class="t">ens19: 10.0.100.1/24</text>
+<text x="820" y="425" class="t">SSH-Client und Compute Node</text>
+<text x="820" y="465" class="t">NFS-Client: /mnt/shared</text>
+<text x="820" y="505" class="t">Automatischer Mount über /etc/fstab</text>
+<path d="M620 400 L780 400" class="line" marker-end="url(#a)"/>
+<path d="M780 440 L620 440" class="line" marker-end="url(#a)"/>
+<text x="700" y="382" text-anchor="middle" class="s">Internes Netz</text>
+<text x="700" y="470" text-anchor="middle" class="s">SSH · NFS</text>
+<rect x="300" y="680" width="800" height="90" class="box" fill="#fff8e8" stroke="#d58b22"/>
+<text x="700" y="718" text-anchor="middle" class="t" font-weight="bold">Externes ZARM-Netz: 192.168.50.0/24</text>
+<text x="700" y="752" text-anchor="middle" class="s">ens18 beider VMs · Gateway 192.168.50.250</text>
+<path d="M380 610 L500 680" class="dash"/>
+<path d="M1020 610 L900 680" class="dash"/>
+<text x="700" y="860" text-anchor="middle" class="s">Stand: 10.07.2026 · Projekt läuft weiter</text>
+</svg>
